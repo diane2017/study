@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新闻视界用户注册</title>
+<link rel="stylesheet" href="__ROOT__/public/css/reset.css"/>
+<link type="text/css" rel="stylesheet" href="__ROOT__/public/css/login.css"/>
+</head>
+<body>
+<!-- 注册模块开始 -->
+<div class="content" id="main">
+	<header class="content-tit"><h1>欢迎注册新闻视界</h1></header>
+	<div id="mMaskD" class="mainBody-wp">
+		<div></div>
+	<div class="mainBody">
+		<div id="overdueTips" class="tips-big" style="display:none;">
+			<b class="ico ico-warn-big"></b>
+			由于您长时间离开，页面已经失效，<a href="javascript:void(0);" onclick="window.location.reload();return false;">请重新注册</a>。
+		</div>
+		<noscript>
+			&lt;div class="tips-big"&gt;
+				&lt;b class="ico ico-warn-big"&gt;&lt;/b&gt;
+				您的浏览器禁止使用JS，无法正常注册，请&lt;a href="http://help.163.com/09/1216/16/5QLUL0H500753VB8.html" target="_blank"&gt;根据提示解除限制&lt;/a&gt;后再注册。
+			&lt;/div&gt;
+		</noscript>
+		<div class="regTabs">
+			<ul id="tabsUl" class="tabs1-on">
+				<li><a tabindex="-1" href="javascript:void(0);" onclick="_Global.main.turnOn();return false;" class="a1" style="text-decoration:none;">注册字母邮箱</a></li>
+				<li><a tabindex="-1" href="javascript:void(0);" onclick="_Global.mobile.turnOn(null,'tab');return false;" class="a2" style="text-decoration:none;">注册手机号码邮箱</a></li>
+				<li><a tabindex="-1" href="javascript:void(0);" onclick="_Global.vip.turnOn();return false;" class="a3" style="text-decoration:none;">注册VIP邮箱</a></li>
+			</ul>
+		</div>
+		<div id="regMain" class="regForm" style="display: block;">
+			<dl id="nameDl" class="regForm-item mainBody-hasFocus-focusArea">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>邮件地址</dt>
+				<dd class="regForm-item-ct">
+					<input onfocus="HGW(this);" onblur="SGW(this);" id="nameIpt" name="name" type="text" class="ipt" style="ime-mode:disabled;color:#999;font-weight:normal" autocomplete="off" value="">
+					<strong class="txt-14">@</strong>
+					<select name="mainDomain" id="mainDomainSelect" tabindex="-1">
+						<option selected="selected" value="163.com">163.com</option>
+						<option value="126.com">126.com</option>
+						<option value="yeah.net">yeah.net</option>
+					</select>
+					<div id="nameTips" class="tips">
+						<span class="txt-tips">6~18个字符，可使用字母、数字、下划线，需以字母开头</span>
+					</div>
+					<div id="conflictDiv" class="owned" style="display:none">
+						<div class="arr"></div>
+						<div class="attent">
+							<b class="ico ico-warn-big"></b>
+							<strong id="conflictTitle" class="txt-impt txt-14">该邮件地址已被注册</strong>
+						</div>
+						<div id="conflictOthersDiv" class="others">
+							<div id="conflictMobile" class="ctExt">
+								推荐您注册<a href="javascript:void(0);" onclick="_Global.mobile.turnOn(null,'recommend1');return false;" hidefocus="true"><strong class="txt-succ">手机号码@163.com</strong></a>
+								<a href="javascript:void(0);" onclick="_Global.mobile.turnOn(null,'recommend2');return false;" class="btnSml" hidefocus="true">免费注册</a>
+							</div>
+							<div>您还可以选择：</div>
+							<ul id="conflictOthers"></ul>
+						</div>
+					</div>
+				</dd>
+			</dl>
+			<dl id="mainPwdDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>密码</dt>
+				<dd class="regForm-item-ct">
+					<input id="mainPwdIpt" name="mainPassword" type="password" class="ipt norWidthIpt" style="ime-mode:disabled">
+					<div id="mainPwdTips" class="tips" style="position:relative">
+						<div id="mainPwdStatus" class="pswState pswState-poor" style="display:none;">
+							<span class="s1">弱</span>
+							<span class="s2">中等</span>
+							<span class="s3">强</span>
+						</div>
+						<span class="txt-tips">6~16个字符，区分大小写</span>
+					</div>
+				</dd>
+			</dl>
+			<dl id="mainCfmPwdDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>确认密码</dt>
+				<dd class="regForm-item-ct">
+					<input id="mainCfmPwdIpt" name="mainConfirmPassword" type="password" class="ipt norWidthIpt" style="ime-mode:disabled">
+					<div id="mainCfmPwdTips" class="tips">
+						<span class="txt-tips">请再次填写密码</span>
+					</div>
+				</dd>
+			</dl>
+			
+			<dl id="mainMobileDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>手机号码</dt>
+				<dd class="regForm-item-ct">
+					<div class="inputContainer itlPhone" style="padding-left: 35px;">
+						<input type="text" id="mainMobileIpt" name="mobile" class="input ipt norWidthIpt" value="" style="padding-left: 35px;width:292px;">
+						
+					<div class="itl" style="width:35px;height:27px;line-height:27px;"><div class="itlFlag flag-CN"><em>&nbsp;</em></div></div></div>
+					<div id="mainMobileTips" class="tips">
+						<span class="txt-tips">忘记密码时，可以通过该手机号码快速找回密码</span>
+					</div>
+				</dd>
+			</dl>
+			<dl id="vcodeDl" class="regForm-item vCodeArea vCodeArea-big">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>验证码</dt>
+				<dd class="regForm-item-ct">
+					<input id="vcodeIpt" name="vcode" type="text" class="ipt" autocomplete="off" style="width: 196px;">
+					<img id="vcodeImg" class="vCode" style="cursor:pointer;" src="/unireg/call.do?cmd=register.verifyCode&amp;v=common/verifycode/vc_en&amp;vt=main_acode&amp;env=681086624789&amp;t=1499569422690" alt="验证码" width="120" height="50"><a id="vcodeA" href="javascript:void(0);" class="switchvCode" tabindex="-1">看不清楚？换张图片</a>
+					<div id="vcodeTips" class="tips">
+						<span class="txt-tips" id="vRemind">请填写图片中的字符，不区分大小写</span>
+					</div>
+					
+					<div class="btns">
+						<a id="sendMainAcodeBtn" href="javascript:void(0);" class="btn" hidefocus="true" onclick="_Global.main.mainAcode();">
+							<strong id="sendMainAcodeStg">免费获取验证码</strong></a>
+						<span id="acodeMainSentSpan" class="txt-succ" style="display:none;">&nbsp;&nbsp;短信验证码已发送</span>
+					</div>
+				</dd>
+			</dl>
+			
+			<dl id="acodeMainDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>短信验证码</dt>
+				<dd class="regForm-item-ct">
+					<input id="mainAcodeIpt" name="acode" type="text" class="ipt norWidthIpt" autocomplete="off">
+					<div id="mainAcodeTips" class="tips">
+						<span class="txt-tips">请查收手机短信，并填写短信中的验证码</span>
+					</div>
+				</dd>
+			</dl>
+			<dl id="mainAcceptDl" class="regForm-item">
+				<dd class="regForm-item-ct txt-tips">
+					<label></label><input id="mainAcceptIpt" type="checkbox" checked="checked" tabindex="-1"> 同意<a href="http://reg.163.com/agreement.shtml" target="_blank" tabindex="-1">"服务条款"</a>和<a href="http://reg.163.com/agreement_game.shtml" target="_blank" tabindex="-1">"隐私权相关政策"</a>
+					<div id="mainAcceptTips"></div>
+				</dd>
+			</dl>
+			<dl class="regForm-item">
+				<dd class="regForm-item-ct">
+					<a id="mainRegA" href="javascript:void(0);" onclick="_Global.main.start();" class="btnReg">立即注册</a>
+					<a id="mainRegA_d" href="javascript:void(0);" class="btnRegDisable" style="display:none">立即注册</a>
+				</dd>
+			</dl>
+		</div>
+		<div id="regMobile" class="regForm" style="display: none;">
+			<dl id="mobileDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>手机号码</dt>
+				<dd class="regForm-item-ct">
+					<div class="mob-supt">
+						<input id="mobileIpt" name="mobile" type="text" class="ipt" style="ime-mode:disabled" autocomplete="off">
+						<strong class="txt-14">@163.com</strong>
+						<b class="ico ico-mob"></b>
+					</div>
+					<div id="mobileTips" class="tips">
+						<span class="txt-tips">请填写手机号码</span>
+						
+					</div>
+				</dd>
+			</dl>
+			<dl id="mVcodeDl" class="regForm-item vCodeArea vCodeArea-big">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>图片验证码</dt>
+				<dd class="regForm-item-ct">
+					<input id="mVcodeIpt" name="vcode" type="text" class="ipt" autocomplete="off" style="width: 196px;">
+					<img id="mVcodeImg" class="vCode" style="cursor:pointer;" src="/unireg/call.do?cmd=register.verifyCode&amp;v=common/verifycode/vc_en&amp;vt=mobile_acode&amp;t=1499569422700" alt="验证码" width="120" height="50"><a id="mVcodeA" href="javascript:void(0);" class="switchvCode" tabindex="-1">看不清楚？换张图片</a>
+					<div id="mVcodeTips" class="tips">
+						<span class="txt-tips" id="mVRemind">请填写图片中的字符，不区分大小写</span>
+					</div>
+					<div class="btns">
+						<a id="sendAcodeBtn" href="javascript:void(0);" class="btn" hidefocus="true"><strong id="sendAcodeStg">免费获取验证码</strong></a>
+						<span id="acodeSentSpan" class="txt-succ" style="display:none;">&nbsp;&nbsp;短信验证码已发送</span>
+					</div>
+				</dd>
+			</dl>
+			<dl id="acodeDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>短信验证码</dt>
+				<dd class="regForm-item-ct">
+					<input id="acodeIpt" name="acode" type="text" class="ipt norWidthIpt" autocomplete="off">
+					<div id="acodeTips" class="tips">
+						<span class="txt-tips">请查收手机短信，并填写短信中的验证码</span>
+					</div>
+				</dd>
+			</dl>
+			<dl id="mobilePwdDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>密码</dt>
+				<dd class="regForm-item-ct">
+					<input id="mobilePwdIpt" name="mobilePassword" type="password" class="ipt norWidthIpt" style="ime-mode:disabled">
+					<div id="mobilePwdTips" class="tips" style="position:relative">
+						<div id="mobilePwdStatus" class="pswState pswState-poor" style="display:none;">
+							<span class="s1">弱</span>
+							<span class="s2">中等</span>
+							<span class="s3">强</span>
+						</div>
+						<span class="txt-tips">6~16个字符，区分大小写</span>
+					</div>
+				</dd>
+			</dl>
+			<dl id="mobileCfmPwdDl" class="regForm-item">
+				<dt class="regForm-item-tit"><span class="txt-impt">*</span>确认密码</dt>
+				<dd class="regForm-item-ct">
+					<input id="mobileCfmPwdIpt" name="mobileConfirmPassword" type="password" class="ipt norWidthIpt" style="ime-mode:disabled">
+					<div id="mobileCfmPwdTips" class="tips">
+						<span class="txt-tips">请再次填写密码</span>
+					</div>
+				</dd>
+			</dl>
+			<dl id="mobileAcceptDl" class="regForm-item">
+				<dd class="regForm-item-ct txt-tips">
+					<label></label><input id="mobileAcceptIpt" type="checkbox" checked="checked" tabindex="-1"> 同意<a href="javascript:void(0);" onclick="noticePopup.show();return false;" tabindex="-1">"用户须知"</a>和<a href="http://reg.163.com/agreement_game.shtml" target="_blank" tabindex="-1">"隐私权相关政策"</a>
+					<div id="mobileAcceptTips"></div>
+				</dd>
+			</dl>
+			<dl class="regForm-item">
+				<dd class="regForm-item-ct">
+					<a id="mobileRegA" href="javascript:void(0);" onclick="_Global.mobile.start();return false;" class="btnReg">立即注册</a>
+					<a id="mobileRegA_d" href="javascript:void(0);" class="btnRegDisable" style="display:none">立即注册</a>
+				</dd>
+			</dl>
+		</div>
+		<div id="regVipFrame" class="regVipFrame" style="padding-left: 0px; width: 640px; height: 620px; margin-left: -58px; display: none;"><iframe id="regVipFrameId" src="http://vip.163.com/reg/vip_reg.html#from=fmail_reg_tab&amp;domain=163&amp;type=30" frameborder="0" border="0" width="100%" height="100%" style="width:100%;height:100%;"></iframe></div>
+	</div>
+	</div>
+</div>
+<!-- 注册模块结束 -->
+</body>
+</html>

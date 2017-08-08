@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后台管理--添加用户</title>
+<link rel="stylesheet" href="__ROOT__/public/css/reset.css">
+<link rel="stylesheet" href="__ROOT__/public/css/layout.css">
+</head>
+<body>
+
+<include file="Public:header"/>
+</div>
+	<div id="admin-main">
+		<div id="admin-main-wrapper">
+			<div class="current-position">当前位置：<a href="__APP__/Index/menu">首页</a>&nbsp;&gt;&nbsp;添加用户</div>
+			<form id="form" action="__APP__/Admin/insert" method="post">
+				<table>
+					<tr>
+						<td class="col-title">用户名</td>
+						<td><input type="text" name="admin_name" class="cate_name" id="admin_name"><span id="username_checkinfo"></span></td>
+					</tr>
+					<tr>
+						<td class="col-title">密码</td>
+						<td><input type="password" name="admin_pass" class="cate_name" id="admin_pass"><span id="password_checkinfo"></span></td>
+					</tr>
+					<tr>
+						<td class="col-title">确认密码</td>
+						<td><input type="password" name="admin_pass2" id="admin_pass2" class="cate_name"><span id="password2_checkinfo"></span></td>
+					</tr>
+					<tr>
+						<td class="col-title">真实姓名</td>
+						<td><input type="text" name="true_name" class="cate_name" id="true_name"><span id="truename_checkinfo"></span></td>
+					</tr>	
+					<tr>
+						<td class="col-title">用户等级</td>
+						<td>
+							<select name="admin_level">
+								<option value="1">新闻采编</option>
+								<option value="2">新闻主编</option>
+								<option value="3">系统管理员</option>
+							</select>
+						</td>
+					</tr>										
+					<tr>
+						<td>&nbsp;</td>
+						<td><input type="submit" value="保存" class="submit-button"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

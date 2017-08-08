@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新闻添加页</title>
+<link rel="stylesheet" href="__ROOT__/public/css/reset.css">
+<link rel="stylesheet" href="__ROOT__/public/css/layout.css">
+<!-- ueditor编辑器 -->
+<script type="text/javascript" charset="utf-8" src="__ROOT__/library/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__ROOT__/library/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="__ROOT__/library/ueditor/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+
+<include file="Public:header"/>
+	<div id="admin-main">
+		<div id="admin-main-wrapper">
+			<div class="current-position">当前位置：<a href="__APP__/Index/menu">首页</a>&nbsp;&gt;&nbsp;发布新闻</div>
+			<form action="__APP__/Article/insert" method="post">
+				<table>
+					<tr>
+						<td class="col-title">新闻标题</td>
+						<td><input type="text" name="art_subject" class="art_subject"></td>
+					</tr>
+					<tr>
+						<td class="col-title">所属栏目</td>
+						<td>
+							<select name="cate_id">
+	                         {$cate_row}	
+                            </select>
+							<a href="#" class="link">栏目管理</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-title">新闻来源</td>
+						<td>
+							<select name="ptr_id">
+								<foreach name="ptr_row" item="v">
+								<option value="{$v.id}">{$v.ptr_name}</option>			
+								</foreach>					
+							</select>
+							<a href="#" class="link">来源管理</a>							
+						</td>
+					</tr>
+					<tr>
+						<td class="col-title">新闻正文</td>
+						<td><script id="editor" name="art_content" type="text/plain" style="width:100%;height:350px;"></script></td>
+					</tr>					
+					<tr>
+						<td>&nbsp;</td>
+						<td><input type="submit" value="保存" class="submit-button"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+<script type="text/javascript">
+	var ue = UE.getEditor('editor');	
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

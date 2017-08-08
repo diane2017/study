@@ -1,0 +1,1 @@
+a:7:{i:0;s:2:"id";i:1;s:10:"admin_name";i:2;s:10:"admin_pass";i:3;s:9:"true_name";i:4;s:11:"admin_level";s:3:"_pk";s:2:"id";s:5:"_type";a:5:{s:2:"id";s:20:"smallint(5) unsigned";s:10:"admin_name";s:11:"varchar(20)";s:10:"admin_pass";s:11:"varchar(32)";s:9:"true_name";s:11:"varchar(20)";s:11:"admin_level";s:19:"tinyint(3) unsigned";}}

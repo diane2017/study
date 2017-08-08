@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管理--合作伙伴列表</title>
+</head>
+<body>
+<include file="Public:header"/>
+<div id="admin-main">
+		<div id="admin-main-wrapper">
+			<div class="current-position">当前位置：<a href="index.php">首页</a>&nbsp;&gt;&nbsp;新闻列表</div>
+			<table>
+				<tr>
+					<td class="checkbox"><input type="checkbox" id="control_checkbox"></td>
+					<td>伙伴名称</td>
+					<td>网站名称</td>
+				</tr>
+				<?php foreach($rowset as $row){?>
+				<tr>
+					<td><input type="checkbox" name="partner_checkbox[]" value="<?php echo $row['id']?>"></td>
+					<td><?php echo $row['ptr_name']?></td>
+					<td><a href="<?php echo $row['ptr_url']?>"><?php echo $row['ptr_url']?></a></td>
+				</tr>
+				<?php }?>
+			</table>
+						
+		</div>
+	</div>
+</body>
+</html>

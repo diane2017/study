@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户列表</title>
+<link rel="stylesheet" href="__ROOT__/public/css/reset.css">
+<link rel="stylesheet" href="__ROOT__/public/css/layout.css">
+</head>
+<body>
+<include file="Public:header"/>
+<div id="admin-main">
+		<div id="admin-main-wrapper">
+			<div class="current-position">当前位置：<a href="__APP__/Index/menu">首页</a>&nbsp;&gt;&nbsp;用户列表</div>
+				<form method="post" id="form">				
+			
+					<table id="article-list">
+						<tr>
+							
+							<td>序号</td>
+							<td>用户名</td>
+							<td>真实姓名</td>							
+							<td>用户等级</td>
+							<td>操作</td>
+						</tr>
+					<foreach name="rowset" item="v">
+					<tr>
+						<td>{$v.id}</td>
+						<td>{$v.admin_name}</td>
+						<td>{$v.true_name}</td>
+						<td>{$v.admin_level}</td>
+						<td>
+							<input type="button" value="修改" id="alter_btn"/>
+							<input type="button" value="删除" id="del_btn"/>
+						</td>
+					</tr>
+					</foreach>
+					</table>
+				</form>						
+		</div>
+	</div>
+</body>
+</html>

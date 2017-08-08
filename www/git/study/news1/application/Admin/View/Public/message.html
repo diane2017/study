@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>系统提示信息</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/public/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="__ROOT__/public/css/index.css"/>
+<script>
+	var index=5;
+	function changeTime(){
+		document.getElementById('timeSpan').innerHTML=index;
+		index--;
+		if(index<0){
+			window.location="{$jumpUrl}";
+		}else{
+			window.setTimeout("changeTime()",1000);
+		}
+	}
+</script>
+</head>
+<body onload="changeTime()">
+
+
+<h3 align="center">系统提示信息</h3>
+<p align="center">{$message}页面将在<span id="timeSpan">5</span>秒钟内自动跳转！</p>
+<br/>
+<p align="center">如果没有自动跳转，<a href="{$jumpUrl}">请点击这里</a></p>
+</body>
+</html>

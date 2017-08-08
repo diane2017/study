@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="__ROOT__/public/css/reset.css">
+<link rel="stylesheet" href="__ROOT__/public/css/layout.css">
+</head>
+<body>
+<div id="header">
+		<div class="logo"><img src="__ROOT__/public/images/logo1.png" alt=""></div>
+		<div class="logout">欢迎{$session}登录&nbsp;&nbsp;<a href="__APP__/Login/index">注销</a></div>
+	</div>
+<div id="admin-menu">
+<h3>新闻管理</h3>
+<ul>
+	<li><a href="__APP__/Article/create">发布新闻</a></li>
+	
+	<li><a href="__APP__/Article/listing">新闻列表</a></li>
+	<li><a href="__APP__/Article/recyclelist">新闻回收站</a></li>
+
+</ul>	
+
+<h3>栏目管理</h3>
+<ul>
+	<li><a href="__APP__/Category/create">添加栏目</a></li>
+	<li><a href="__APP__/Category/listing">栏目列表</a></li>
+</ul>
+<h3>合作伙伴管理</h3>
+<ul>
+	<li><a href="__APP__/Partner/create">添加伙伴</a></li>
+	<li><a href="__APP__/Partner/listing">伙伴列表</a></li>
+</ul>
+
+<h3>用户管理</h3>
+<ul>
+	<li><a href="__APP__/Admin/create">添加用户</a></li>
+	<li><a href="__APP__/Admin/listing">用户列表</a></li>
+</ul>
+
+<h3>项目说明手册</h3>
+<ul>
+	<li><a href="__APP__/project/index">项目说明</a></li>
+</ul>
+</div>
+<script>
+	$(function(){
+		$('#admin-menu>h3').click(function(){
+			$(this).next().slideToggle();
+		});	
+		$('#admin-menu').height($(document).height());		
+	});
+</script>
+</body>
+</html>

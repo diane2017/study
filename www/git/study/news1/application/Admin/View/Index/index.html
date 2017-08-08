@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>菜单页</title>
+<link rel="stylesheet" href="__ROOT__/public/css/reset.css"/>
+<link rel="stylesheet" href="__ROOT__/public/css/layout.css"/>
+</head>
+<body>
+
+	<include file="Public:header"/>
+	
+	<div id="admin-main">
+		<div id="admin-main-wrapper">
+			<table>
+				<tr>
+					<td class="col-title">系统名称</td>
+					<td>新闻视界CMS项目</td>
+				</tr>
+				<tr>
+					<td class="col-title">开发团队</td>
+					<td>达内PHP学院-PSD1703</td>
+				</tr>	
+				<tr>
+					<td class="col-title">操作系统</td>
+					<td>{$php_os}</td>
+				</tr>
+				<tr>
+					<td class="col-title">PHP版本</td>
+					<td>{$php_ver}</td>
+				</tr>
+				<tr>
+					<td class="col-title">PHP运行方式</td>
+					<td>{$php_sapi}</td>
+				</tr>
+					
+			</table>
+		</div>
+	</div>
+</body>
+</html>

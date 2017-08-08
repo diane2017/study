@@ -1,0 +1,64 @@
+#wrapper{
+	width:980px;
+	margin:0 auto;
+}
+#logo{
+	height:65px;
+	margin:5px 0;
+}
+#navi{
+    height: 42px;
+    background: #900;
+    margin-top: 10px;
+}
+#navi li{
+	float:left;
+}
+#navi li a {
+    display: block;
+    padding: 0 25px;
+	line-height:42px;
+    color: #fff;
+}
+#subject,#article-info,#main{
+    margin-top: 15px;
+}
+#subject{
+	font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    line-height: 50px;
+}
+#article-info{
+	font-size:16px;
+}
+.cmt_num{
+	color:#ff8500;
+}
+
+#main .left{
+	float:left;
+	width:670px;
+}
+#main .right{
+	float:right;
+	width:300px;
+}
+.article-body{
+	margin:0 10px;
+}
+.article-body p {
+    font-size: 14px;
+    line-height: 2em;
+    margin: 15px 0;
+	font-size: 16px;
+	text-indent:2em;
+}
+
+
+
+
+
+
+
+

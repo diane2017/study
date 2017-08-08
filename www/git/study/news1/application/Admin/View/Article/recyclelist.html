@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新闻视界--后台管理--新闻回收站</title>
+<link rel="stylesheet" href="__ROOT__/public/css/reset.css">
+<link rel="stylesheet" href="__ROOT__/public/css/layout.css">
+<script src="__ROOT__/public/js/jquery-1.10.0.min.js"></script>
+<script>
+$(function(){
+	$('#control_checkbox').on('click',function(){
+		$(':checkbox[name=article_checkbox\\[\\]]').prop('checked',$(this).prop('checked'));
+	});
+	$(':checkbox[name=article_checkbox\\[\\]]').on('click',function(){
+		$('#control_checkbox').prop('checked',$(':checkbox[name=article_checkbox\\[\\]]').size()==$(':checkbox[name=article_checkbox\\[\\]]:checked').size());
+	});
+	$('#delete_btn').on('click',function(){
+		if($(':checkbox[name=article_checkbox\\[\\]]:checked').size()!=0){
+		$("#form").attr('action','__APP__/Article/remove').submit();
+		}
+	});
+	$('#recycle_btn').on('click',function(){
+		if($(':checkbox[name=article_checkbox\\[\\]]:checked').size()!=0){
+		$('#form').attr('action','__APP__/Article/restore').submit();
+		}
+	});
+});
+</script>
+</head>
+<body>
+	<include file="Public:header"/>
+	<div id="admin-main">
+		<div id="admin-main-wrapper">
+			<div class="current-position">当前位置：<a href="__APP__/Index/menu">首页</a>&nbsp;&gt;&nbsp;新闻回收站</div>
+				<form method="post" id="form">
+				<div id="buttons-wrapper">
+					<input type="button" class="button" value="彻底删除" id="delete_btn">
+					<input type="button" class="button" value="还原" id="recycle_btn">
+				</div>					
+				<table id="search-table">
+					<tr>						
+						<td>							
+							<input type="text" name="keywords" class="search-txt" id="keywords">
+							<input type="button" value="" class="search-btn" id="search-btn">
+						</td>
+					</tr>
+					
+				</table>
+			
+			<table id="article-list">
+				<tr>
+					<td class="checkbox"><input type="checkbox" id="control_checkbox"></td>
+					<td>新闻标题</td>
+					<td class="cate_name">所属栏目</td>
+					<td class="is_checked">状态</td>
+					<td class="add_time">发布日期</td>
+				</tr>
+				 <foreach name="rowset" item="v">
+				<tr>
+					<td><input type="checkbox" name="article_checkbox[]" value="{$v.id}"></td>
+					<td>
+					<a href="__APP__/Article/modify/id/{$v.id}" title="单击可编辑">
+					
+						{$v.art_subject}
+
+					</a></td>
+					<td>{$v.cate_name}</td>
+					<td class="is_checked">{$v.is_checked}</td>
+					<td>{$v.add_time}</td>
+				</tr>
+				</foreach>
+			</table>
+			</form>						
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+

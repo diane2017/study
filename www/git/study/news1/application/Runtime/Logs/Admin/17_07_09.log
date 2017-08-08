@@ -1,0 +1,618 @@
+[ 2017-07-09T17:03:50+08:00 ] ::1 /new2/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\ec38c6caf7a7f474f9f595f89a41409c.php 第 22 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2017-07-09T17:03:53+08:00 ] ::1 /new2/admin.php/Article/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0075s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `partner`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\9f64657d84f21ed55e904f2fa87ba2d6.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-07-09T17:06:05+08:00 ] ::1 /new2/admin.php/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SELECT * FROM `partner` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `article` (`art_subject`,`cate_id`,`ptr_id`,`art_content`,`add_time`,`admin_id`,`filepath`) VALUES ('练习','5','1','<p><span style=\"font-family: 宋体, simsun, sans-serif, Arial; font-size: 14px; line-height: 26px; widows: 1; background-color: rgb(255, 255, 255);\">国际知名金融学家沈联涛40多年来在世界各地参加过各类会议。而这一次他到国务院第一会议室参会后，发出感叹：“国务院的工作作风如此务实，总理与大家交流互动如此坦诚，愿意抽出近3个小时与专家学者、企业家们进行务实、民主的讨论，聆听各方意见建议，据我所知这样的工作形式与作风在世界上是绝无仅有的。”</span></p><p><img src=\"/ueditor/php/upload/image/20170709/1499591161492797.jpeg\" title=\"1499591161492797.jpeg\" alt=\"Img500440729.jpeg\"/></p><p><span style=\"font-family: 宋体, simsun, sans-serif, Arial; font-size: 14px; line-height: 26px; widows: 1; background-color: rgb(255, 255, 255);\">7月6日，李克强总理主持召开经济形势座谈会，6位专家和企业家受邀参加。除沈联涛外，还有华夏新供给经济学研究院首席经济学家贾康、上海交通大学安泰经济与管理学院教授陈宪，以及中国第一重型机械集团公司董事长刘明忠这样的大型国有企业负责人、顺丰速运公司董事长王卫和旷视科技公司创始人兼CEO印奇等新兴产业的企业家。</span></p>','1499591164','1','2017-07-09/d5e9de4b37a110ef2f7bc797ebc47f2f.html') [ RunTime:0.0661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000796s ]
+
+[ 2017-07-09T17:06:10+08:00 ] ::1 /new2/admin.php/Article/listing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0006s ]
+SQL: select art.id,art_subject,add_time,is_checked,filepath,ptr_name,cate_name,ptr_url,true_name from article as art left join category as c on cate_id=c.id  left join partner as p on ptr_id=p.id  left join admin as a on admin_id=a.id  order by id desc  limit 0,10 [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: selected F:\www\new2\application\Admin\Controller\ArticleController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\8d84743535ae44234ad2d5c65187db58.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2017-07-09T18:03:56+08:00 ] ::1 /new2/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\ec38c6caf7a7f474f9f595f89a41409c.php 第 22 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-07-09T18:03:58+08:00 ] ::1 /new2/admin.php/Article/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0004s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `partner`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\9f64657d84f21ed55e904f2fa87ba2d6.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2017-07-09T18:04:01+08:00 ] ::1 /new2/admin.php/Category/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\553aadcfee5ddc5eff6c9ed95ac2060a.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2017-07-09T18:04:15+08:00 ] ::1 /new2/admin.php/Category/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: INSERT INTO `category` (`cate_name`,`parent_id`) VALUES ('社会新闻','0') [ RunTime:0.0402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001098s ]
+
+[ 2017-07-09T18:04:20+08:00 ] ::1 /new2/admin.php/Category/listing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\575031a450f48756da3bcdfaf1eb29ea.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2017-07-09T18:04:34+08:00 ] ::1 /new2/admin.php/Category/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=8 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\553aadcfee5ddc5eff6c9ed95ac2060a.php 第 19 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2017-07-09T18:04:45+08:00 ] ::1 /new2/admin.php/Article/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=8 [ RunTime:0.0003s ]
+SQL: SELECT * FROM `partner`  [ RunTime:0.0299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\9f64657d84f21ed55e904f2fa87ba2d6.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2017-07-09T18:06:43+08:00 ] ::1 /new2/admin.php/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SELECT * FROM `partner` WHERE ( id='3' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `article` (`art_subject`,`cate_id`,`ptr_id`,`art_content`,`add_time`,`admin_id`,`filepath`) VALUES ('这个家族137年来首次生女婴 打出公路广告庆祝','8','3','<p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\">　据美媒报道，美国南卡罗来纳州一个家族137年第一次诞生女婴，整个家族兴高采烈。更令人想不到的是，女婴父亲的同事甚至帮他在公路旁一个广告牌上打广告，公开庆祝女婴的诞生。广告牌有12英尺（约3.6米）高，24英尺（约7.3米）宽，广告上还附有一句祝福语：欢迎来到这个世界，卡特-路易斯-塞特尔（Carter Louise Settle）。</span></p><p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\"><img src=\"/ueditor/php/upload/image/20170709/1499594799895416.jpg\" title=\"1499594799895416.jpg\" alt=\"N27k-fyhwres9428954.jpg\"/></span></p><p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\"><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\">女婴卡特出生于6月25日，父亲威尔（Will Settle）38岁，母亲凯伦（Kelen Settle）35岁。女儿出生前威尔已经有一个儿子了，不过是和前妻所生，现任妻子怀孕后他还以为又要生个儿子。</span></span></p>','1499594803','1','2017-07-09/5ba40cc09f163d8b3fe11abad5b866e4.html') [ RunTime:0.0939s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2017-07-09T18:06:48+08:00 ] ::1 /new2/admin.php/Article/listing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select art.id,art_subject,add_time,is_checked,filepath,ptr_name,cate_name,ptr_url,true_name from article as art left join category as c on cate_id=c.id  left join partner as p on ptr_id=p.id  left join admin as a on admin_id=a.id  order by id desc  limit 0,10 [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: selected F:\www\new2\application\Admin\Controller\ArticleController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\8d84743535ae44234ad2d5c65187db58.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2017-07-09T18:06:51+08:00 ] ::1 /new2/admin.php/Article/checked/id/23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: UPDATE `article` SET `is_checked`='1' WHERE ( id=23 ) [ RunTime:0.1485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001262s ]
+
+[ 2017-07-09T18:06:52+08:00 ] ::1 /new2/admin.php/Article/checked/id/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: UPDATE `article` SET `is_checked`='1' WHERE ( id=22 ) [ RunTime:0.0608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2017-07-09T18:06:55+08:00 ] ::1 /new2/admin.php/Article/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=8 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `partner`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\9f64657d84f21ed55e904f2fa87ba2d6.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2017-07-09T18:09:00+08:00 ] ::1 /new2/admin.php/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SELECT * FROM `partner` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: INSERT INTO `article` (`art_subject`,`cate_id`,`ptr_id`,`art_content`,`add_time`,`admin_id`,`filepath`) VALUES ('高校期末考试考斗图:用表情包画出考试时心情','8','1','<p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\">7月8日，南信大传媒与艺术学院2015级数字媒体专业“用户体验与心理”科目的期末考试试卷成了网友们关注的焦点。考卷上，第一大题要求用表情包画出考试时的心情、老师的心情、旁边同学的心情等等。顿时各种以“迷之微笑”“大声告诉我服不服”“我就知道这不是一场简单的考试”，甚至校训“明德格物、立己达人”为主题的表情包都成为了考试答案。围观者惊呼：“还有这种操作？这样的卷子请给我来一打！”</span></p><p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\"><img src=\"/ueditor/php/upload/image/20170709/1499594898850524.png\" title=\"1499594898850524.png\" alt=\"xRM3-fyhwres9566009.png\"/></span></p><p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\"><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; widows: 1;\">7月8日，南信大传媒与艺术学院2015级数字媒体专业“用户体验与心理”科目的期末考试试卷成了网友们关注的焦点。考卷上，第一大题要求用表情包画出考试时的心情、老师的心情、旁边同学的心情等等。顿时各种以“迷之微笑”“大声告诉我服不服”“我就知道这不是一场简单的考试”，甚至校训“明德格物、立己达人”为主题的表情包都成为了考试答案。围观者惊呼：“还有这种操作？这样的卷子请给我来一打！”</span></span></p>','1499594940','1','2017-07-09/693ef19d45b746b553ab133b88cf87ff.html') [ RunTime:0.0777s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2017-07-09T18:09:05+08:00 ] ::1 /new2/admin.php/Article/listing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: select art.id,art_subject,add_time,is_checked,filepath,ptr_name,cate_name,ptr_url,true_name from article as art left join category as c on cate_id=c.id  left join partner as p on ptr_id=p.id  left join admin as a on admin_id=a.id  order by id desc  limit 0,10 [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: selected F:\www\new2\application\Admin\Controller\ArticleController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\8d84743535ae44234ad2d5c65187db58.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2017-07-09T18:09:35+08:00 ] ::1 /new2/admin.php/Article/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001445s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=8 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `partner`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\9f64657d84f21ed55e904f2fa87ba2d6.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-07-09T18:10:33+08:00 ] ::1 /new2/admin.php/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+SQL: SELECT * FROM `partner` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `article` (`art_subject`,`cate_id`,`ptr_id`,`art_content`,`add_time`,`admin_id`,`filepath`) VALUES ('一个APP搞定所有共享单车？资金安全理赔均存疑','8','1','<p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\">现在南京市场上共有12个共享单车品牌，许多市民为了获得更多的便利，同时在使用多种单车，但烦恼也随之而来：每种单车都要下载单独的APP，手机内存吃不消；每个APP都要支付押金，钱包也吃不消。7月5日，现代快报 （微博）记者发现，一个叫“全能车”的APP悄然出现，声称只要一份押金，任意品牌单车随心骑。方便是方便了，不过，现代快报记者从各共享单车运营商了解到，他们并未给该APP授权。那么，这款APP违法吗？押金有没有纳入监管？</span></p><p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\"><img src=\"/ueditor/php/upload/image/20170709/1499595025638763.jpeg\" title=\"1499595025638763.jpeg\" alt=\"Img500440729.jpeg\"/></span></p><p><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; line-height: 32px; widows: 1;\"><span style=\"font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; widows: 1;\">现在南京市场上共有12个共享单车品牌，许多市民为了获得更多的便利，同时在使用多种单车，但烦恼也随之而来：每种单车都要下载单独的APP，手机内存吃不消；每个APP都要支付押金，钱包也吃不消。7月5日，现代快报 （微博）记者发现，一个叫“全能车”的APP悄然出现，声称只要一份押金，任意品牌单车随心骑。方便是方便了，不过，现代快报记者从各共享单车运营商了解到，他们并未给该APP授权。那么，这款APP违法吗？押金有没有纳入监管？</span></span></p>','1499595033','1','2017-07-09/c056a249217fa9c16df3d550e05f507f.html') [ RunTime:0.0462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2017-07-09T18:10:38+08:00 ] ::1 /new2/admin.php/Article/listing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0030s ]
+SQL: select art.id,art_subject,add_time,is_checked,filepath,ptr_name,cate_name,ptr_url,true_name from article as art left join category as c on cate_id=c.id  left join partner as p on ptr_id=p.id  left join admin as a on admin_id=a.id  order by id desc  limit 0,10 [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: selected F:\www\new2\application\Admin\Controller\ArticleController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\8d84743535ae44234ad2d5c65187db58.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2017-07-09T18:11:49+08:00 ] ::1 /new2/admin.php/Article/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0004s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0003s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0002s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0001s ]
+SQL: select * from category where parent_id=8 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `partner`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\9f64657d84f21ed55e904f2fa87ba2d6.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2017-07-09T18:12:29+08:00 ] ::1 /new2/admin.php/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012522s ]
+SQL: SELECT * FROM `partner` WHERE ( id='3' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `article` (`art_subject`,`cate_id`,`ptr_id`,`art_content`,`add_time`,`admin_id`,`filepath`) VALUES ('母女不听劝阻执意在长城砖上刻名字 网友:耻辱','8','3','<p style=\"margin-top: 15px; margin-bottom: 15px; padding: 0px; line-height: 2em; font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; white-space: normal; widows: 1;\">　这几日，有关长城的两条消息引发了市民的热议。一条消息是，怀柔箭扣长城最险段的修缮工程全面完工；另一条消息则令人气愤，一对母女不听大家的劝阻，执意在城砖上刻字。</p><p style=\"margin-top: 15px; margin-bottom: 15px; padding: 0px; line-height: 2em; font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; white-space: normal; widows: 1;\">　　早在1961年，长城被列为首批全国重点文保单位。1987年，长城被列入世界文化遗产名录，成为全人类共同的财富。正如一位网友说的那样，在长城上刻字，刻下的不是名字，是耻辱！</p><p><img src=\"/ueditor/php/upload/image/20170709/1499595138855255.png\" title=\"1499595138855255.png\" alt=\"xMHV-fyhwres9831797.png\"/></p><p style=\"margin-top: 15px; margin-bottom: 15px; padding: 0px; line-height: 2em; font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; white-space: normal; widows: 1;\">　这几日，有关长城的两条消息引发了市民的热议。一条消息是，怀柔箭扣长城最险段的修缮工程全面完工；另一条消息则令人气愤，一对母女不听大家的劝阻，执意在城砖上刻字。</p><p style=\"margin-top: 15px; margin-bottom: 15px; padding: 0px; line-height: 2em; font-family: &quot;Microsoft YaHei&quot;, u5FAEu8F6Fu96C5u9ED1, Arial, SimSun, u5B8Bu4F53; white-space: normal; widows: 1;\">　　早在1961年，长城被列为首批全国重点文保单位。1987年，长城被列入世界文化遗产名录，成为全人类共同的财富。正如一位网友说的那样，在长城上刻字，刻下的不是名字，是耻辱！</p><p><br/></p>','1499595149','1','2017-07-09/592fefa04cf4c32d154c8c546db3015e.html') [ RunTime:0.0761s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-07-09T18:12:32+08:00 ] ::1 /new2/admin.php/Article/listing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select art.id,art_subject,add_time,is_checked,filepath,ptr_name,cate_name,ptr_url,true_name from article as art left join category as c on cate_id=c.id  left join partner as p on ptr_id=p.id  left join admin as a on admin_id=a.id  order by id desc  limit 0,10 [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: selected F:\www\new2\application\Admin\Controller\ArticleController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: session F:\www\new2\application\Runtime\Cache\Admin\8d84743535ae44234ad2d5c65187db58.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2017-07-09T18:12:36+08:00 ] ::1 /new2/admin.php/Article/checked/id/26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: UPDATE `article` SET `is_checked`='1' WHERE ( id=26 ) [ RunTime:0.0739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2017-07-09T18:12:36+08:00 ] ::1 /new2/admin.php/Article/checked/id/25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: UPDATE `article` SET `is_checked`='1' WHERE ( id=25 ) [ RunTime:0.0192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-07-09T18:12:37+08:00 ] ::1 /new2/admin.php/Article/checked/id/24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: UPDATE `article` SET `is_checked`='1' WHERE ( id=24 ) [ RunTime:0.0284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+

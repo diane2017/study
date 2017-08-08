@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管理--添加合作伙伴</title>
+</head>
+<body>
+<include file="Public:header"/>
+<div id="admin-main">
+		<div id="admin-main-wrapper">
+			<div class="current-position">当前位置：<a href="index.php">首页</a>&nbsp;&gt;&nbsp;添加合作伙伴</div>
+			<form action="index.php?ctl=partner&action=store" method="post">
+				<table>
+					<tr>
+						<td class="col-title">网站名称</td>
+						<td><input type="text" name="ptr_name" class="art_subject"></td>
+					</tr>
+					<tr>
+					<tr>
+						<td class="col-title">网站地址</td>
+						<td><input type="text" name="ptr_url" class="art_subject"></td>
+					</tr>
+					<tr>				
+					<tr>
+						<td>&nbsp;</td>
+						<td><input type="submit" value="保存" class="submit-button"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

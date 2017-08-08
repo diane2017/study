@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页导航</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/public/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="__ROOT__/public/css/index.css"/>
+</head>
+<body>
+ <div class="top-wrap"><!--100%背景-->
+       <div class="top-width area"><!--固定宽度内容水平居中 -->
+           <div class="left">
+               <a href="#">巴西世界杯一再爆冷</a> 
+               <a href="#">卫冕冠军西班牙出局</a> 
+               <a href="#">瑞士人为啥最幸福</a> 
+               <a href="#">中国病人庞麦郎</a>  
+           </div>
+           <div class="right">
+               <div class="login-info">
+                  <a href="__APP__/Login/login">登录</a>
+               </div>
+               <div class="other-info">
+                  <a href="__APP__/Login/register">免费注册</a>
+                 
+                                您好,<a href="#" class="blue">{$cookie}</a>
+                  <a href="#">退出</a>
+               </div>
+           </div>
+       </div>
+    </div>
+    <!--头部快速链接结束-->
+    <!--头部logo开始  -->
+    <div class="logo-wrap area clearfix">
+        <div class="left">
+           <a href="#"><img src="__ROOT__/public/images/logo.png" alt=""/></a>
+        </div>
+        <div class="right">
+           <form action="" method="get" class="frm">
+               <input type="text" name="search-key" class="search-key" placeholder=""/>
+               <input type="submit" value="搜索" class="search-btn"/>
+           </form>
+        </div>
+    </div>
+    <!--头部logo结束  -->
+    <!--头部导航开始  -->
+    <div class="navi-wrap clearfix"><!--100%背景  -->
+       <ul class="area"><!--固定宽度  -->
+       <li><a href="#">首页</a></li>
+       <foreach name="topRow" item="v">
+       <li><a href="#">{$v.cate_name}</a></li>
+       </foreach>
+  
+       </ul>
+    </div>
+</body>
+</html>

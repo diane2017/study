@@ -1,0 +1,102 @@
+[ 2017-07-11T20:44:12+08:00 ] ::1 /news1/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: session D:\www\news1\application\Runtime\Cache\Admin\ec38c6caf7a7f474f9f595f89a41409c.php 第 22 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-11T20:44:14+08:00 ] ::1 /news1/admin.php/Article/create
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: select * from category where parent_id=0 [ RunTime:0.0100s ]
+SQL: select * from category where parent_id=1 [ RunTime:0.0010s ]
+SQL: select * from category where parent_id=4 [ RunTime:0.0000s ]
+SQL: select * from category where parent_id=23 [ RunTime:0.0010s ]
+SQL: select * from category where parent_id=5 [ RunTime:0.0000s ]
+SQL: select * from category where parent_id=2 [ RunTime:0.0000s ]
+SQL: select * from category where parent_id=6 [ RunTime:0.0010s ]
+SQL: select * from category where parent_id=7 [ RunTime:0.0000s ]
+SQL: select * from category where parent_id=3 [ RunTime:0.0000s ]
+SQL: select * from category where parent_id=19 [ RunTime:0.0010s ]
+SQL: select * from category where parent_id=21 [ RunTime:0.0000s ]
+SQL: select * from category where parent_id=22 [ RunTime:0.0010s ]
+SQL: select * from category where parent_id=24 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `partner`  [ RunTime:0.0550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: session D:\www\news1\application\Runtime\Cache\Admin\9f64657d84f21ed55e904f2fa87ba2d6.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-11T20:44:34+08:00 ] ::1 /news1/admin.php/Article/insert
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT * FROM `partner` WHERE ( id='1' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: INSERT INTO `article` (`art_subject`,`cate_id`,`ptr_id`,`art_content`,`add_time`,`admin_id`,`filepath`) VALUES ('bgh ','24','1','<p>dfhhgkmyuj.,&nbsp;<img src=\"/ueditor/php/upload/image/20170711/1499777071912963.jpg\" title=\"1499777071912963.jpg\" alt=\"9EE243591C0ECDC01A328600FCFD9961.jpg.165x100.jpg\"/></p>','1499777073','1','2017-07-11/9eda5edaef3958c069cb64867e5a86f7.html') [ RunTime:0.2000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-11T20:44:39+08:00 ] ::1 /news1/admin.php/Article/listing
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0390s ]
+SQL: select art.id,art_subject,add_time,is_checked,filepath,ptr_name,cate_name,ptr_url,true_name from article as art left join category as c on cate_id=c.id  left join partner as p on ptr_id=p.id  left join admin as a on admin_id=a.id  order by id desc  limit 0,10 [ RunTime:0.0530s ]
+NOTIC: [8] Undefined variable: selected D:\www\news1\application\Admin\Controller\ArticleController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: session D:\www\news1\application\Runtime\Cache\Admin\8d84743535ae44234ad2d5c65187db58.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
